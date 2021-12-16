@@ -1,4 +1,13 @@
-month_number = int(input("Please provide the number of the month: "))
+month_number = input("Please provide the number of the month: ")
+
+while True:
+    try:
+        month_number = int(month_number)
+        break
+    except ValueError:
+        print("That's not an integer number")
+        month_number = input("Please provide the number of the month: ")
+
 if month_number not in range(1, 13):
     print("Wrong number, your month number is 1!")
     month_number = 1
@@ -9,7 +18,16 @@ list_month = [["January", "Winter"], ["February", "Winter"], ["March", "Spring"]
 
 print(f"{list_month[month_number-1][0]} is {list_month[month_number-1][1]}")
 
-month_number_2 = int(input("Please provide the number of the month again: "))
+month_number_2 = input("Please provide the number of the month again: ")
+
+while True:
+    try:
+        month_number_2 = int(month_number)
+        break
+    except ValueError:
+        print("That's not an integer number")
+        month_number_2 = input("Please provide the number of the month: ")
+
 if month_number_2 not in range(1, 13):
     print("Wrong number, your month number is 1!")
     month_number_2 = 1
