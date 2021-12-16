@@ -1,4 +1,13 @@
-number_of_elements = int(input("How many elements do you want to provide? "))
+number_of_elements = input("How many elements do you want to provide? ")
+
+while True:
+    try:
+        number_of_elements = int(number_of_elements)
+        break
+    except ValueError:
+        print("That's not an integer number")
+        number_of_elements = input("How many elements do you want to provide? ")
+
 if number_of_elements < 0:
     number_of_elements = 0
 list_of_elements = []
