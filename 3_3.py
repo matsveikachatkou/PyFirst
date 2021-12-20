@@ -8,4 +8,4 @@ def my_func(one, two, three):
 
 
 print(my_func("adf", 5, 6))
-print(my_func(11, 5, 6))
+print(my_func(11, 5, 7))
