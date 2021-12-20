@@ -10,7 +10,7 @@ def sum_of_string():
                 try:
                     floats_list.append(float(item))
                 except ValueError:
-                    print("All items must be numbers separated by space!")
+                    print("All items must be numbers separated by space.")
                     break
             else:
                 continue_program = False
